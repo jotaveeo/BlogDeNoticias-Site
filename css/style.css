@@ -1,220 +1,238 @@
-
 /* Fonte */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,700&display=swap");
 
 :root {
-    /* Paleta de cores */
-    --cor-principal: #6c5fff;
-    --cor-01: #f9f9f9;
-    --cor-02: #dfdfdf;
-    --cor-03: #8e8e8e;
-    --cor-04: #595959;
-    --cor-05: #232323;
+  /* Paleta de cores */
+  --cor-principal: #6c5fff;
+  --cor-01: #f9f9f9;
+  --cor-02: #dfdfdf;
+  --cor-03: #8e8e8e;
+  --cor-04: #595959;
+  --cor-05: #232323;
 }
 
 /* Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
 }
 
 body {
-    background-color: var(--cor-02);
-    color: var(--cor-05);
+  background-color: var(--cor-02);
+  color: var(--cor-05);
 }
 
 /* ===== Barra de navegação ===== */
 header {
-    background-color: var(--cor-05);
-    color: var(--cor-01);
+  background-color: var(--cor-05);
+  color: var(--cor-01);
 
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 100;
-    padding: 1rem 5rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  padding: 1rem 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header span {
-    color: var(--cor-principal);
+  color: var(--cor-principal);
 }
 
 .menu-responsivo {
-    display: none;
+  display: none;
 }
 
 .menu-responsivo i {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
 nav ul {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
 }
 
 nav a {
-    text-decoration: none;
-    color: inherit;
-    font-weight: 700;
-    padding: 0.5rem 1rem;
-    letter-spacing: 0.1rem;
-    transition: 0.5s;
+  text-decoration: none;
+  color: inherit;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  letter-spacing: 0.1rem;
+  transition: 0.5s;
 }
 
 nav a:hover {
-    color: var(--cor-principal);
+  color: var(--cor-principal);
 }
 
 .logo {
-    font-size: 1.5rem;
-    font-weight: 700;
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
 /* ===== Notícias ===== */
 main {
-    margin: 5rem auto;
+  margin: 5rem auto;
 }
 
 article {
-    background-color: var(--cor-01);
-    height: 16rem;
-    margin: 1rem 5rem;
-    padding: 1rem;
-    border-radius: 0.6rem;
-    transition: 0.5s;
-    overflow: hidden;
+  background-color: var(--cor-01);
+  height: 16rem;
+  margin: 1rem 5rem;
+  padding: 1rem;
+  border-radius: 0.6rem;
+  transition: 0.5s;
+  overflow: hidden;
 
-    display: grid;
-    grid-template-columns: 16rem auto;
+  display: grid;
+  grid-template-columns: 16rem auto;
 }
 
 article p {
-    margin-top: 1rem;
-    text-align: justify;
+  margin-top: 1rem;
+  text-align: justify;
 }
 
 article:hover {
-    cursor: pointer;
-    transform: scale(1.01);
-    /*          X Y desfoque    espessura   cor */
-    box-shadow: 0 0 0.5rem      0.1rem      var(--cor-03);
+  cursor: pointer;
+  transform: scale(1.01);
+  /*          X Y desfoque    espessura   cor */
+  box-shadow: 0 0 0.5rem 0.1rem var(--cor-03);
 }
 
 .conteudo {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-
 .foto {
-    overflow: hidden;
-    margin-right: 1rem;
+  overflow: hidden;
+  margin-right: 1rem;
+  border-radius: 0.6rem;
 }
 
 .foto img {
-    height: 100%;
+  height: 100%;
+  border-radius: 0.6rem;
 }
 
 .leia-mais {
-    font-weight: 700;
-    color: var(--cor-principal);
-    text-align: right;
-    padding: 1rem;
+  font-weight: 700;
+  color: var(--cor-principal);
+  text-align: right;
+  padding: 1rem;
 }
 
 /* ===== Rodape ===== */
 footer {
-    background-color: var(--cor-05);
-    color: var(--cor-02);
-    padding: 1rem 5rem;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    opacity: 0.6;
+  background-color: var(--cor-05);
+  color: var(--cor-02);
+  padding: 1rem 5rem;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  opacity: 0.6;
 }
-
 
 /* ===== Media Queries ===== */
 
 /* XS Extra Small - celular retrato (portrait) */
 @media (max-width: 576px) {
-    header {
-        padding: 1rem 2rem;
-    }
-    
-    .menu-responsivo {
-        display: block;
-    }
+  header {
+    padding: 1rem 2rem;
+    background-color: aqua;
+  }
 
-    .menu {
-        display: none;
-    }
+  .menu-responsivo {
+    display: block;
+  }
 
-    article {
-        height: auto;
-        margin: 1rem;
-    
-        display: flex;
-        flex-direction: column;
-    }
+  .menu {
+    display: none;
+  }
 
-    .foto {
-        margin-right: 0;
-    }
-    
-    .foto img {
-        width: 100%;
-    }
+  article {
+    height: auto;
+    margin: 1rem;
 
-    .texto {
-        max-height: 10rem;
-        overflow: hidden;
-    }
+    display: flex;
+    flex-direction: column;
+  }
 
+  .foto {
+    margin-right: 0;
+  }
 
-    /* TESTE */
-    header {
-        background-color: #ff4df9;
-    }
+  .foto img {
+    width: 100%;
+  }
+
+  .texto {
+    max-height: 10rem;
+    overflow: hidden;
+  }
 }
 
 /* SM Small - celular paisagem (landscape) */
 @media (min-width: 576px) {
-    header {
-        padding: 1rem 2rem;
-        background-color: red;
+  header {
+    padding: 1rem 2rem;
+    background-color: red;
+  }
 
-    .menu-responsivo {
-            display: block;
-        }
-    
-    .menu {
-            display: none;
-        }
-    }
+  .menu-responsivo {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  article {
+    height: auto;
+    margin: 1rem;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .foto {
+    margin-right: 0;
+  }
+
+  .foto img {
+    width: 100%;
+  }
+
+  .texto {
+    max-height: 10rem;
+    overflow: hidden;
+  }
 }
 
-/* SM Small - celular paisagem (landscape) */
-@media (min-width: 768px) {
+/* Tablet */
+@media (min-width: 992px) {
+  header {
+    padding: 1rem 5rem;
+    background-color: chocolate;
+  }
+}
+
+/* Notebook */
+@media (min-width: 1200px) {
     header {
-        padding: 1rem 2rem;
-        background-color: orange;
-        width: 100%;
-    }
-    article {
-        margin: 3rem;
+        background-color: black;
     }
 }
