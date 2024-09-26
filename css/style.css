@@ -53,6 +53,10 @@ header span {
     display: none;
 }
 
+.menu-responsivo i {
+    font-size: 3rem;
+}
+
 nav ul {
     display: flex;
     flex-direction: row;
@@ -113,6 +117,7 @@ article:hover {
     justify-content: space-between;
 }
 
+
 .foto {
     overflow: hidden;
     margin-right: 1rem;
@@ -129,7 +134,6 @@ article:hover {
     padding: 1rem;
 }
 
-
 /* ===== Rodape ===== */
 footer {
     background-color: var(--cor-05);
@@ -142,28 +146,26 @@ footer {
     opacity: 0.6;
 }
 
-/* Media Queries */
-/* XS Extra Small - Celular retrato (portrait */
 
+/* ===== Media Queries ===== */
+
+/* XS Extra Small - celular retrato (portrait) */
 @media (max-width: 576px) {
+    header {
+        padding: 1rem 2rem;
+    }
+    
     .menu-responsivo {
         display: block;
     }
-    
+
     .menu {
         display: none;
     }
 
-    header {
-        background-color: var(--cor-04);
-        padding: 1rem 2rem;
-    }
-
     article {
-        background-color: var(--cor-01);
         height: auto;
         margin: 1rem;
-        /* overflow: hidden; */
     
         display: flex;
         flex-direction: column;
@@ -175,5 +177,43 @@ footer {
     
     .foto img {
         width: 100%;
+    }
+
+    .texto {
+        max-height: 10rem;
+        overflow: hidden;
+    }
+
+
+    /* TESTE */
+    header {
+        background-color: #ff4df9;
+    }
+}
+
+/* SM Small - celular paisagem (landscape) */
+@media (min-width: 576px) {
+    header {
+        padding: 1rem 2rem;
+        background-color: red;
+
+    .menu-responsivo {
+            display: block;
+        }
+    
+    .menu {
+            display: none;
+        }
+    }
+}
+
+/* SM Small - celular paisagem (landscape) */
+@media (min-width: 768px) {
+    header {
+        padding: 1rem 2rem;
+        background-color: orange;
+    }
+    article {
+        margin: 3rem;
     }
 }
