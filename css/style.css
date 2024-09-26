@@ -212,6 +212,7 @@ footer {
     header {
         padding: 1rem 2rem;
         background-color: orange;
+        width: 100%;
     }
     article {
         margin: 3rem;
