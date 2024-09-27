@@ -8,3 +8,5 @@ Update: Finalizado a versão 1 - 25/09/2024.
 Update: Finalizado a responsividade - 26/09/2024.
 <br>
 Update: Menu Hamburguer - 26/09/2024.
+<br>
+Update: Menu Hamburguer finalizado - 27/09/2024.
