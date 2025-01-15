@@ -1,5 +1,5 @@
-## Buenas News
-# Site criado para fins educativos em prol da programação.
+# Buenas News
+### Site criado para fins educativos em prol da programação.
 
 Blog de notícias utilizando as Tags Semânticas do HTML e CSS.
 
