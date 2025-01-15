@@ -3,7 +3,7 @@
 
 Blog de notícias utilizando as Tags Semânticas do HTML e CSS.
 
-Acesso: https://jotaveeo.github.io/blog-html/
+Acesso: https://jotaveeo.github.io/BlogDeNoticias-Site/
 
 Update: Finalizado a versão 1 - 25/09/2024.
 
